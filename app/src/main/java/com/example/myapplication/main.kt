@@ -7,6 +7,9 @@ fun main() {
     println(ej3esMayorQue10YMenorQue20(12, 17))
     println(ej4evaluarCalificacion(40))
     println(ej5sumarNumeros(1, 2, 3))
+    println(ej6invertirArray(arrayOf(1, 2, 3, 4, 5)).joinToString(", "))  // Imprime: 5, 4, 3, 2, 1
+
+
 }
 
 fun ej1EsPar(numero: Int): Boolean {
@@ -53,9 +56,8 @@ fun ej5sumarNumeros(vararg numeros: Int): Int {
 /*6. Implementa una función llamada invertirArray que tome un array de números
 como argumento y devuelva un nuevo array con los elementos en orden inverso.*/
 
-fun ej6invertirArray(vararg numeros: Int): IntArray {
+fun ej6invertirArray(numeros: Array<Int>): Array<Int> {
     return numeros.reversedArray()
 }
-
 
 
